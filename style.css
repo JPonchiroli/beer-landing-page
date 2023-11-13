@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+:root{
+    --black-normal: #161616;
+    --yellow-normal: #d6d300;
+}
+
+body{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #000;
+    position: fixed;
+    top: 0;
+    background-color: var(--black-normal);
+    z-index: 99;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 15px 0;
+} 
+
+li a{
+    text-decoration: none;
+    color: var(--yellow-normal);
+    font-weight: bold;
+}
+
+#home, #content, #contat{
+    height: 650px;
+}
+
+#home{
+    margin-top: 50px;
+    background-color: var(--yellow-normal);
+}
+
+.container{
+    display: flex;
+}
+
+.container .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.container .right{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.bootles{
+    transform: scale(0.7);
+    z-index: -1;
+}
+
+.bootle-1{
+    transform: rotate(-30deg);
+}
+
+.bootle-2{
+    transform: rotate(30deg);
+    position: relative;
+    top: -100px;
+    left: 30px;
+}
